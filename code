@@ -1,1 +1,18 @@
+Let's make a game!
+	name:Limited
+	by:boshki0987
+	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.0
+	created:3/16/2020
 
+Settings
+	building cost increase:100%
+	building cost refund:0%
+	no particles
+	no bulk particles
+	
+Layout
+	*backbox
+		contains:number
+
+Resources
+	*number
