@@ -58,8 +58,9 @@ Buttons
 				yield 1 cp
 				lose increasecpcost limit
 				yield 10 increasecpcost
-			if (number > limit)
-				number is limit
+					if (number > limit)
+						number is limit
+				end
 			end
 		end
 		tag:center
