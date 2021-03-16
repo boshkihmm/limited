@@ -52,7 +52,7 @@ Buttons
 		tag:center
 	*increasecp
 		name:Increase click power
-		textIncrease click power by 1 (cost: [increasecpcost] limit)
+		text:Increase click power by 1 (cost: [increasecpcost] limit)
 		on click:
 			if (limit >= increasecpcost) 
 				yield 1 cp
