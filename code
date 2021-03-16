@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Limited
 	by:boshki0987
-	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.4b
+	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.5b
 	created:3/16/2020
 
 Settings
@@ -29,6 +29,9 @@ Resources
 		hidden
 		start with:1
 		tag:center
+	*increasecpcost
+		hidden
+		start with:10
 	
 Buttons
 	*TEMPLATE
@@ -48,12 +51,13 @@ Buttons
 		end
 		tag:center
 	*increasecp
-		name:Increase click power by 1
+		name:Increase click power
+		textIncrease click power by 1 (cost: [increasecpcost] limit)
 		on click:
 			if (limit >= increasecpcost) 
 				yield 1 cp
-				lose 10 limit
-				number is 0
+				lose increasecpcost limit
+				yield 10 increasecpcost
 			if (number > limit)
 				number is limit
 			end
