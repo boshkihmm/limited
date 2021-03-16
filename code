@@ -12,7 +12,8 @@ Settings
 	
 Layout
 	*backbox
-		contains:number
+		contains:tag:center
 
 Resources
 	*number
+		tag:center
