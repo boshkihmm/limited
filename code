@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Limited
 	by:boshki0987
-	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.1b
+	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.2b
 	created:3/16/2020
 
 Settings
@@ -17,14 +17,20 @@ Layout
 Resources
 	*number
 		tag:center
-		text:[number] / [limit]
 		no tooltip
+		name:Number
 	*limit
 		name:Limit
-		hidden
-		start with:1
+		text:Number: [number] / [limit]
+		start with:5
+		tag:center
+		no tooltip
 Buttons
-	*increase
+	*increasenum
 		name:Increase number by 1
-		on click:yield 1 number
+		on click:if (number < limit) yield 1 number
+		tag:center
+	*increaselim
+		name:Increase limit by 1
+		on click:if (number = limit) yield 1 limit
 		tag:center
