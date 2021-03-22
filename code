@@ -13,6 +13,10 @@ Settings
 Layout
 	*backbox
 		contains:tag:center
+	*upgrades
+		contains:milestone
+		costs:hide
+		names:hide
 
 Resources
 	*TEMPLATE
@@ -90,3 +94,9 @@ Buttons
 			end
 		end
 		tag:center
+
+Upgrades
+	*TEMPLATE
+		tag:milestone
+	*TEMPLATE
+		tag:upgrade
