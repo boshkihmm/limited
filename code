@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Limited
 	by:boshki0987
-	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.7b
+	desc:Your number can be increased by clicking, but it can only go so high. How big can you go when it's so limited?<//>Version 0.8b
 	created:3/16/2020
 
 Settings
@@ -14,7 +14,7 @@ Layout
 	*backbox
 		contains:tag:center
 	*upgrades
-		contains:milestone
+		contains:tag:milestone
 		costs:hide
 		names:hide
 
